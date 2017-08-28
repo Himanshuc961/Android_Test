@@ -56,18 +56,19 @@
         android:id="@+id/myText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/yText"
-        android:layout_centerVertical="true"
-        android:text="Mag_Y" />
+        android:text="Mag_Y"
+        android:layout_below="@+id/mxText"
+        android:layout_alignEnd="@+id/mxText"
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/mz_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/mxText"
+        android:text="Mag_Y"
         android:layout_below="@+id/myText"
-        android:layout_marginTop="32dp"
-        android:text="Mag_Y" />
+        android:layout_alignStart="@+id/myText"
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:id="@+id/gxText"
@@ -77,5 +78,15 @@
         android:layout_below="@+id/mz_Text"
         android:layout_marginTop="32dp"
         android:text="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/yText"
+        android:layout_marginBottom="32dp"
+        android:onClick="click"
+        android:text="Plot Graphs" />
 
 </RelativeLayout>

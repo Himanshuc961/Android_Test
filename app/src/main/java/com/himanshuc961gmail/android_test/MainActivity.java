@@ -1,11 +1,13 @@
 package com.himanshuc961gmail.android_test;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
@@ -95,4 +97,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
     }
+
+    public void click(View v){
+
+        Intent intent = new Intent(MainActivity.this, graphActivity.class);
+        startActivity(intent);
+    }
+
+
+    
 }
