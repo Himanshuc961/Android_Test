@@ -11,7 +11,7 @@ import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
 
-public class graphActivity extends AppCompatActivity {
+public class graphActivity extends AppCompatActivity implements SensorEventListener {
     private Sensor mySensor;
     private SensorManager SM;
 
@@ -26,9 +26,9 @@ public class graphActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graph);
-    }
+    
 
-      /*  SM = (SensorManager)getSystemService(SENSOR_SERVICE);
+        SM = (SensorManager)getSystemService(SENSOR_SERVICE);
 
         // Accelerometer Sensor
         mySensor = SM.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -43,6 +43,7 @@ public class graphActivity extends AppCompatActivity {
         graph.getViewport().setMinX(0);
         graph.getViewport().setMaxX(200);
     }
+    @Override
     public void onSensorChanged(SensorEvent event) {
         x = event.values[0] ;
         y = event.values[1] ;
@@ -59,5 +60,8 @@ public class graphActivity extends AppCompatActivity {
 
 
 
-    }*/
+    }
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
 }
