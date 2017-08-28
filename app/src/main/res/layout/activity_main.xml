@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.himanshuc961gmail.android_test.MainActivity">
+
+    <TextView
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/xText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/light"
+        android:layout_below="@+id/light"
+        android:layout_marginTop="22dp"
+        android:text="Acc_X" />
+
+    <TextView
+        android:id="@+id/yText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/xText"
+        android:layout_below="@+id/xText"
+        android:layout_marginTop="26dp"
+        android:text="Acc_Y" />
+
+    <TextView
+        android:id="@+id/zText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/xText"
+        android:layout_below="@+id/yText"
+        android:layout_marginTop="28dp"
+        android:text="Acc_Z" />
+
+    <TextView
+        android:id="@+id/mxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/zText"
+        android:layout_below="@+id/zText"
+        android:layout_marginTop="26dp"
+        android:text="Mag_X" />
+
+    <TextView
+        android:id="@+id/myText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/yText"
+        android:layout_centerVertical="true"
+        android:text="Mag_Y" />
+
+    <TextView
+        android:id="@+id/mz_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mxText"
+        android:layout_below="@+id/myText"
+        android:layout_marginTop="32dp"
+        android:text="Mag_Y" />
+
+    <TextView
+        android:id="@+id/gxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/myText"
+        android:layout_below="@+id/mz_Text"
+        android:layout_marginTop="32dp"
+        android:text="TextView" />
+
+</RelativeLayout>
